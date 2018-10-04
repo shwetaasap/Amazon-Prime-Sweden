@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Ecommerce Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg navbar-fixed-top">
+        <h1 class="navbar-sm-header ">
+            <img src="amazon-prime.jpg" class="imagesize" alt="logo image">
+        </h1>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#responsive-nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="responsive-nav">
+            <ul class="list nav navbar-nav  p-0">
+                <li class="nav-item  p-2 mr-3">
+                    <a href="index.html">
+                        <span class="fa fa-fw fa-home">Home</span>
+                    </a>
+                </li>
+                <div class="search-container">
+                    <form action="#">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <li class="nav-item p-1 ml-1">
+                    <div class="container">
+                        <button id="butto" type="button" onclick="showCart()" class="btn btn-primary">CART</button>
+                        <p id="cartPrice">Price</p>
+                        <P id="cartQuantity">no.of items</P>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="row bg-warning ">
+                    <div class="col-sm bg-info">
+                        <div class="card-sm-header p-0 m-0 bg-danger">
+                            <p>
+                                <strong>Catoegories</strong>
+                            </p>
+                        </div>
+                        <div class="card-group">
+                            <div class="card m-2">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <a href="index1.html" alt="Electronic">Electronics</a>
+                                    </h5>
+                                    <img src="Cat1.jpg" class="image img-responsive" alt="Electronics">
+                                    <p class="card-text" id="item1">Click to view items</p>
+                                </div>
+                            </div>
+                            <div class="card m-2">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <a href="index1.html" alt="Electronic">Clothing</a>
+                                    </h5>
+                                    <img src="toys.jpg" class="image img-responsive" alt="Electronics">
+                                    <p class="card-text" id="item1">Click to view items</p>
+                                </div>
+                            </div>
+                            <div class="card m-2">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <a href="index1.html" alt="Electronic">Toys</a>
+                                    </h5>
+
+                                    <img src="ph.jpg" class="image img-responsive" alt="Electronics">
+                                    <p class="card-text" id="item1">Click to view items</p>
+                                </div>
+                            </div>
+                            <div class="card m-2">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <a href="index1.html" alt="Electronic">Phones</a>
+                                    </h5>
+                                    <img src="Cat1.jpg" class="image img-responsive" alt="Electronics">
+                                    <p class="card-text" id="item1">Click to view items</p>
+                                </div>
+                            </div>
+                            <div class="card m-2">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <a href="index1.html" alt="Electronic">Sports</a>
+                                    </h5>
+                                    <img src="sports.jpg" class="image img-responsive" alt="Electronics">
+                                    <p class="card-text" id="item1">Click to view items</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    </section>
+    <footer id="footer" class="container-fluid">
+        <p class="lead text-center">Made by me &copy; 2018</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

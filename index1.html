@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Ecommerce Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+<body>
+        <nav class="navbar navbar-light navbar-expand-lg navbar-fixed-top">
+                <h1 class="navbar-sm-header ">
+                    <img src="amazon-prime.jpg" class="imagesize" alt="logo image">
+                </h1>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mynav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynav">
+                    <ul class="list nav navbar-nav  p-0">
+                        <li class="nav-item  p-2 mr-3">
+                            <a href="index.html">
+                                <span class="fa fa-fw fa-home">Home</span>
+                            </a>
+                        </li>
+                        <div class="search-container">
+                            <form action="#">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <li class="nav-item p-1 ml-1">
+                            <div class="container">
+                                <button id="butto" type="button" onclick="showCart()" class="btn btn-primary">CART</button>
+                                <p id="cartPrice">Price</p>
+                                <P id="cartQuantity">no.of items</P>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+           
+    <main>
+            <section>
+                <div class="container">
+                    <div class="row bg-warning ">
+                        <div class="col-sm bg-info">
+                            <div class="card-group">
+                                <div class="card m-2">
+                                        <img class="card-img-top img-responsive" src="Electronic Cigarette.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Item1</h5>
+                                        <p class="card-text" id="item1">Electronic Cigarrete</p>
+                                        <p id="price_0">400</p>
+                                            <input type="number" class="inputbox" id="quantity_0">
+                                            <button type="button" onclick="addToCart(0)" class="btn btn-sm p-0 btn-info">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <img class="card-img-top img-responsive" src="Ep2.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Item1</h5>
+                                        <p class="card-text">Computer</p>
+                                            <p id="price_1">700</p>
+                                            <input type="number" class="inputbox" id="quantity_1">
+                                            <button type="button" onclick="addToCart(1)" class="btn btn-sm p-0 btn-info">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <img class="card-img-top img-responsive" src="Ep3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Item2</h5>
+                                        <p class="card-text">Headphones</p>
+                                            <p id="price_2">500</p>
+                                            <input type="number" class="inputbox" id="quantity_2">
+                                            <button type="button" onclick="addToCart(2)" class="btn btn-sm p-0 btn-info">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <img class="card-img-top img-responsive" src="Ep4.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Item3</h5>
+                                        <p class="card-text">Iron</p>
+                                            <p id="price_3">800</p>
+                                            <input type="number" class="inputbox" id="quantity_3">
+                                            <button type="button" onclick="addToCart(3)" class="btn btn-sm p-0 btn-info">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <img class="card-img-top img-responsive" src="Ep5.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Item4</h5>
+                                        <p class="card-text">Electronic</p>
+                                            <p id="price_4">600</p>
+                                            <input type="number" class="inputbox" id="quantity_4">
+                                            <button type="button" onclick="addToCart(4)" class="btn btn-sm p-0 btn-info">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="card m-2">
+                                    <img class="card-img-top img-responsive" src="Ep6.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Item6</h5>
+                                        <p class="card-text">Head phones</p>
+                                            <p id="price_1">700</p>
+                                            <input type="number" class="inputbox" id="quantity_1">
+                                            <button type="button" onclick="addToCart(1)" class="btn btn-sm p-0 btn-info">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <img class="card-img-top img-responsive" src="Ep7.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Item7</h5>
+                                        <p class="card-text">Electronic</p>
+                                            <p id="price_2">500</p>
+                                            <input type="number" class="inputbox" id="quantity_2">
+                                            <button type="button" onclick="addToCart(2)" class="btn btn-sm p-0 btn-info">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <img class="card-img-top img-responsive" src="Ep8.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Item8</h5>
+                                        <p class="card-text">Electronic</p>
+                                            <p id="price_3">800</p>
+                                            <input type="number" class="inputbox" id="quantity_3">
+                                            <button type="button" onclick="addToCart(3)" class="btn btn-sm p-0 btn-info">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <img class="card-img-top img-responsive" src="Ep9.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Item9</h5>
+                                        <p class="card-text">Electronic</p>
+                                            <p id="price_4">600</p>
+                                            <input type="number" class="inputbox" id="quantity_4">
+                                            <button type="button" onclick="addToCart(4)" class="btn btn-sm p-0 btn-info">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <img class="card-img-top img-responsive" src="Ep10.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Item10</h5>
+                                        <p class="card-text">Electronic</p>
+                                            <p id="price_4">600</p>
+                                            <input type="number" class="inputbox" id="quantity_4">
+                                            <button type="button" onclick="addToCart(4)" class="btn btn-sm p-0 btn-info">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </main>
+    </section>
+    <footer id="footer" class="container-fluid">
+        <p class="lead text-center">Made by me &copy; 2018</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

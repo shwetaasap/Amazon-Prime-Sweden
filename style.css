@@ -1,0 +1,57 @@
+
+.imagesize{
+   width: 20vh ;
+   height: 20vh;
+   margin-left: 20px;
+}
+/*navbar*/
+.navbar{
+    padding: .5rem;
+    width: 100%;
+    background-color: rgb(217, 217, 224);
+}
+.search-container{
+    margin-left: -150vh;
+}
+.navbar-sm-header{
+    font-size: 20px;
+}
+
+.image{
+    width: 180px;
+    border: brown solid;
+}
+.list{
+    margin-left:60rem;
+}
+/*main*/
+.row{
+    width: 100%;
+}
+.col-sm{
+    margin: 1rem;
+    padding: 1rem;
+}
+.card-sm{
+    display: inline;
+}
+.card-group{
+    display:flex;
+}
+.inputbox{
+    width: 30%;
+    height: 10%;
+}
+.btn{
+    border-radius: 0%;
+}
+.card-sm-header{
+    text-align: center;
+}
+#cartPrice{
+    display: none;
+}
+#cartQuantity{
+    display: none;
+}
+
